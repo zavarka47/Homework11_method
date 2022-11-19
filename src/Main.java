@@ -20,8 +20,10 @@ public class Main {
         calculateDeliveryTime(deliveryDistance);
     }
 
-    // method for Exercise 1 ↓
+
+    // methods for Exercise 1 ↓
     private static boolean checkYear (int year) {
+
         return year % 4 == 0 || year % 400 == 0 && year % 100 != 0;
     }
     private static void printResultCheckYear (boolean checkYear, int year) {
@@ -31,7 +33,9 @@ public class Main {
             System.out.println(year + " не год является високосным");
         }
     }
-    // method for Exercise 2 ↓
+
+
+    // methods for Exercise 2 ↓
     private static String checkDeviceRelease(int year) {
         String versionOS = null;
         if (year <= 2015) {
@@ -55,6 +59,8 @@ public class Main {
         String OS = checkDeviceOS(os);
         System.out.println("Установите " + version + " версию приложения для " + OS + " по ссылке");
     }
+
+
     // method for Exercise 3 ↓
     private static void calculateDeliveryTime (int deliveryDistance) {
         if (0 < deliveryDistance && deliveryDistance <= 20) {
